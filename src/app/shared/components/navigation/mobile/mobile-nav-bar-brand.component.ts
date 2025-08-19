@@ -7,7 +7,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
       <a (click)="onMobileNavBarBrandClick()" routerLink="/">
         <img
           class="mobile-nav-bar__logo"
-          src="/assets/JIM.png"
+          src="https://jimetevenard.github.io/test-auth0/assets/JIM.png"
           alt="Auth0 shield logo"
           height="24"
         />

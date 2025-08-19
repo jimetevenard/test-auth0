@@ -33,5 +33,5 @@ import { Component } from '@angular/core';
   `,
 })
 export class HeroBannerComponent {
-  logo = '/assets/JIM.png';
+  logo = 'https://jimetevenard.github.io/test-auth0/assets/JIM.png';
 }

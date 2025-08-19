@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
       <a routerLink="/">
         <img
           class="nav-bar__logo"
-          src="/assets/JIM.png"
+          src="https://jimetevenard.github.io/test-auth0/assets/JIM.png"
           alt="Auth0 shield logo"
           height="36"
         />
