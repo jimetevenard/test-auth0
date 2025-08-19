@@ -46,13 +46,13 @@
 
   /* responsive */
 
-  width: 12.8rem;
-  height: 12.8rem;
+  width: 20rem;
+  height: 20rem;
 }
 
 .hero-banner__image {
-  width: 10.8rem;
-  height: 10.8rem;
+  width: 18rem;
+  height: 18rem;
 }
 
 .hero-banner__image--small {
@@ -83,6 +83,15 @@
   line-height: 3.2rem;
 }
 
+.yop {
+    font-size: 3rem;
+    color: rgb(173, 0, 0);
+}
+
+.yop small {
+  font-size: 2rem;
+}
+
 @media only screen and (max-width: 540px) {
   .hero-banner {
     padding: 3.2rem 1.6rem;
@@ -111,4 +120,6 @@
     font-size: 1.6rem;
     line-height: 2.4rem;
   }
+
+
 }
