@@ -16,7 +16,7 @@ jobs:
       - run: npm run build
       - run: cp ./dist/index.html ./dist/404.html # Rewrite du pauvre pour Github Pages
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v4.0.0
         with:
           path: dist/
 
@@ -33,4 +33,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4.0.0
+        uses: actions/deploy-pages@v4
