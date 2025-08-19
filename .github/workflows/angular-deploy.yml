@@ -6,6 +6,10 @@ jobs:
   build:
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      AUTH0_DOMAIN: ${{ secrets.AUTH0_DOMAIN }}
+      AUTH0_CLIENT_ID: ${{ secrets.AUTH0_CLIENT_ID }}
+      AUTH0_CALLBACK_URL: ${{ secrets.AUTH0_CALLBACK_URL }}
+      API_SERVER_URL: ${{ secrets.API_SERVER_URL }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
