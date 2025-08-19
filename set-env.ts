@@ -5,6 +5,16 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
+if(!process.env['AUTH0_DOMAIN']?.length) {
+    throw new Error(`
+       ERREUR : Pas de AUTH0_DOMAIN !!
+      
+       process.env :
+       =============
+      ${JSON.stringify(process.env, null, 2)}
+    `)
+}
+
 const writeFilePromisified = promisify(writeFile);
 
 const targetPath = './src/environments/environment.ts';
