@@ -14,6 +14,8 @@ jobs:
           node-version: 22
       - run: npm ci
       - run: npm run build
+      - run: ls -al
+      - run: ls -al dist || echo "Dist introuvable"
       - run: cp ./dist/index.html ./dist/404.html # Rewrite du pauvre pour Github Pages
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4.0.0
