@@ -88,8 +88,8 @@
     color: rgb(173, 0, 0);
 }
 
-.yop small {
-  font-size: 2rem;
+.hero-banner__description small {
+  font-size: 0.8em;
 }
 
 @media only screen and (max-width: 540px) {
