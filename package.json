@@ -6,6 +6,7 @@
     "env": "ts-node set-env.ts",
     "start": "npm run env && ng serve",
     "build": "npm run env && ng build",
+    "build:demo": "npm run env && ng build --base-href=/test-auth0/ --deploy-url=/test-auth0/",
     "watch": "ng build --watch --configuration development",
     "api": "json-server --host 0.0.0.0 --port 6060 --watch json-server/db.json --routes json-server/routes.json"
   },
