@@ -13,9 +13,14 @@ export class LogoutButtonComponent {
   private doc = inject(DOCUMENT)
   
   handleLogout(): void {
+
+    // Demo : Gestion de l'env du pauvre
+    const origin = this.doc.location.origin;
+
+    const returnTo = `${origin}${origin.includes('github.io') ? '/test-auth0' : ''}`;
     this.auth.logout({
       logoutParams: {
-        returnTo: this.doc.location.origin,
+        returnTo
       },
     });
   }
